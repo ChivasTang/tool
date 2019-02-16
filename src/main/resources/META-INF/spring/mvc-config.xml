@@ -13,6 +13,7 @@ http://www.springframework.org/schema/mvc/spring-mvc.xsd
 http://www.springframework.org/schema/aop
 http://www.springframework.org/schema/aop/spring-aop.xsd">
     <context:component-scan base-package="${base-package}"/>
+    <aop:aspectj-autoproxy/>
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
     <mvc:resources location="${mvc.staticResources.location}" mapping="${mvc.staticResources.mapping}"/>

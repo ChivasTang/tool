@@ -14,6 +14,20 @@ http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0" metadata-comple
         <param-name>log4jConfiguration</param-name>
         <param-value>classpath:log4j.xml</param-value>
     </context-param>
+    <context-param>
+        <param-name>log4jRefreshInterval</param-name>
+        <param-value>60000</param-value>
+    </context-param>
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+        <param-value>/WEB-INF/resources/i18n/MessageResource</param-value>
+    </context-param>
+    <!-- Fallback locale if no bundles found for browser's preferred locale -->
+    <!-- Force a single locale using param-name 'javax.servlet.jsp.jstl.fmt.locale' -->
+    <context-param>
+        <param-name>javax.servlet.jsp.jstl.fmt.fallbackLocale</param-name>
+        <param-value>en, jp</param-value>
+    </context-param>
 
     <filter>
         <filter-name>characterEncodingFilter</filter-name>
