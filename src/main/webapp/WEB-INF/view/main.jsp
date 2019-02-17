@@ -33,8 +33,8 @@
 </head>
 <body>
 <div class="container">
-    <input id="locale" type="hidden" value="ja">
-    <div class="k-header">This is Header</div>
+
+    <div class="k-header"><input id="locale" type=""/></div>
     <div class="k-content">
         <div id="imageViewerGrid"></div>
     </div>

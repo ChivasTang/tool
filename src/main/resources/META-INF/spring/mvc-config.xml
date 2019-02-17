@@ -16,7 +16,6 @@ http://www.springframework.org/schema/aop/spring-aop.xsd">
     <aop:aspectj-autoproxy/>
     <mvc:annotation-driven/>
     <mvc:default-servlet-handler/>
-    <mvc:resources location="${mvc.staticResources.location}" mapping="${mvc.staticResources.mapping}"/>
 
     <!-- 访问静态文件（jpg,js,css）的方法 -->
     <mvc:resources location="WEB-INF/resources/js/" mapping="/js/**" />

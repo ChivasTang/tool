@@ -5,9 +5,26 @@ $(function () {
 
 var ivLoader = (function(){
     var setFun={
+
        pageReady: function () {
+           setFun.getLocaleDrop();
            setFun.getIVGrid();
        },
+
+        getLocaleDrop: function () {
+            $("#locale").kendoDropDownList({
+                dataTextField: "locale_disp",
+                dataValueField: "locale",
+                dataSource: {data:[{locale:"en",locale_name:"en_US",locale_disp:"English"},{locale:"ja",locale_name:"ja_JP",locale_disp:"Japanese"},{locale:"zh",locale_name:"zh_CN",locale_disp:"Chinese"}]},
+                index: 0,
+                change: setFun.localeOnChange
+            });
+        },
+
+        localeOnChange: function (e) {
+            console.log(e);
+        },
+
         getIVGrid: function () {
             $.ajax({
                 type: "POST",
@@ -39,7 +56,7 @@ var ivLoader = (function(){
                     }
                 },
                 pageable: true,
-                height: 550,
+                height: 400,
                 columns:[{
                     field:"file_id",
                     title: ""

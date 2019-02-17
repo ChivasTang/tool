@@ -16,7 +16,7 @@ var commFunc = (function(){
             }
             $.i18n.properties({
                 name:"MessageSource",
-                path: "WEB-INF/resources/i18n/",
+                path: "i18n",
                 mode:"both",
                 language:locale,
                 callback:function () {
