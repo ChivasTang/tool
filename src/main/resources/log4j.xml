@@ -9,7 +9,7 @@
     </appender>
 
     <appender name="DAILY-debug" class="org.apache.log4j.DailyRollingFileAppender">
-        <param name="File" value="D:/workspace/tool/log" />
+        <param name="File" value="D:\\workspace\\tool\\log\\tool-debug" />
         <param name="Append" value="true" />
         <param name="DatePattern" value="'.'yyyy-MM-dd'.log'" />
         <layout class="org.apache.log4j.PatternLayout">
