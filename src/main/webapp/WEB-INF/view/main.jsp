@@ -34,7 +34,7 @@
 <body>
 <div class="container">
 
-    <div class="k-header"><input id="locale" type=""/></div>
+    <div class="k-header"><div id="locale"></div></div>
     <div class="k-content">
         <div id="imageViewerGrid"></div>
     </div>
